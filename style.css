@@ -1,0 +1,460 @@
+/* styles.css */
+
+/* Reset default list styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #f5f4f3, #9fdbc3, #bfe3f1, #98fb986e);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navigation bar */
+.navbar-wrapper {
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    padding: 1rem;
+}
+
+nav ul h2 {
+    color: #2c0202;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    border-radius: 60%;
+    background-color: #ff990062;
+}
+
+nav li {
+    margin-right: 2rem;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: #2c0202;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: darkorange;
+    background-color: #75910416;
+    border-radius: 50%;
+    text-decoration: underline;
+}
+
+.button {
+    background:linear-gradient(135deg, #e9790a, #2cfaa8, #0f3a4b, #d30c0cd8);
+    color: #fff;
+    border: none;
+    border-radius: 159px;
+    padding: 15px;
+    min-height: 30px;
+    min-width: 120px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #759104;
+}
+/* hero sections*/
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.right{
+    margin-left: 1rem;
+}
+
+.right p{
+    margin-bottom: 3rem;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: purple;
+
+}
+.right h1{
+    margin-bottom: 1.5rem;
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: purple;
+
+}
+
+.left img{
+    width: 550px;
+    min-height: 550px;
+    margin-bottom: 2rem;
+}
+
+.btnHero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #6408f9;
+    padding: 15px 10px;
+    min-height: 30px;
+    min-width: 60px;
+    cursor: pointer;
+    border-radius: 159px; /* Fixed typo: lowercase 'px' */
+    color: white;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.btnHero:hover {
+    background-color: #759104;
+
+}
+
+
+.icons-container {
+    display: flex;
+    align-items: center; /* Vertically align items */
+    justify-content:center; /* Distribute items evenly */
+    padding: 1rem; /* Add some spacing */
+    gap: 1rem;
+}
+
+
+.icons-container i {
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.icons-container i:hover {
+    color: #5b9df5;
+}
+
+.more p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #666;
+    margin: 0; /* Remove default margin */
+}
+
+/* secand sections start */
+.adio_and_video{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height:280px;
+    background-color: rgba(15, 15, 16, 0.315);
+}
+
+.right_text h1{
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(248, 246, 248);
+}
+
+.right_text p{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(247, 242, 247);
+}
+
+.iconVideo{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 5px;
+    margin: 1rem;
+    color: white;
+}
+
+
+/*  mouseover sections  */
+.dropSerises{
+    width: 170px;
+    height: 320px;
+    background-color: rgba(42, 26, 34, 0.205);
+    position: absolute;
+    border-radius: 12px;
+    left: 50%;
+    display: none;
+    list-style: none;
+    padding: 10px 8px;
+    font-family: Arial, sans-serif;
+   
+}
+.dropSerises li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.dropSerises i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #333;
+}
+.dropabout{
+    width: 440px;
+    height: 150px;
+    background-color: rgba(42, 26, 34, 0.205);
+    padding: 12px; 
+    color: purple;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    border-radius: 12px;
+    left: 35%;
+    display: none;
+   
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: absolute;
+    border-radius: 12px;
+    left: 65%;
+    background-color: rgba(42, 26, 34, 0.205);
+    display: none;
+}
+
+/* Style for form inputs */
+.contact-form input[type="text"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style for submit button */
+.contact-form input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/*  mouseover sections  ended*/
+
+.footer {
+    background-color: #06060664;
+    padding: 20px;
+    text-align: center;
+   
+}
+
+/* Styling for the list of links */
+.list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: 1px solid white;
+}
+
+.div {
+    flex: 1;
+    max-width: 200px;
+    margin: 10px;
+}
+
+/* Additional styling for the links */
+.div span {
+    font-weight: bold;
+}
+
+.div a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.div a:hover {
+    text-decoration: underline;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+}
+.langu{justify-content: space-around;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+
+}
+.buttonLanguage{
+    background:black;
+    border-color: #fff;
+    padding: 15px 10px;
+    min-height: 30px;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 159px; /* Fixed typo: lowercase 'px' */
+    color: white;
+    font-weight: 700;
+   position: relative;
+}
+.language{
+    width: 120px;
+    height: 200px;
+    background-color:rgba(0, 0, 0, 0.221);
+    position: absolute;
+    bottom: 90%;
+    border-radius: 12px;
+    color: #f5f4f3;
+    display: none;
+}
+.two{
+    position: relative;
+}
+
+.language ul {
+    list-style: none;
+    padding: 0;
+}
+
+.language li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+/* Responsive Design */
+
+@media screen and (max-width: 1024px) {
+    .hero .right h1 {
+        font-size: 2.5rem;
+    }
+    .hero .right p {
+        font-size: 0.9rem;
+    }
+    .hero .icons-container i {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero .right h1 {
+        font-size: 2rem;
+    }
+    .hero .right p {
+        font-size: 0.8rem;
+    }
+    .hero .icons-container i {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    body,html{
+       
+        background: linear-gradient(135deg, #ffff, #fff, #bfe3f1, #fff);
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero .right h1 {
+        font-size: 1.5rem;
+    }
+    .hero .right p {
+        font-size: 0.7rem;
+    }
+    .hero .left img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+    .hero .btnHero {
+        padding: 10px 20px;
+    }
+    .hero .icons-container {
+        flex-wrap: wrap;
+    }
+    .hero .icons-container div {
+        margin-bottom: 10px;
+    }
+    .hero .icons-container i {
+        font-size: 16px;
+    }
+    .adio_and_video .right_text h1 {
+        font-size: 2.5rem;
+    }
+    .adio_and_video .right_text p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero .right h1 {
+        font-size: 1.2rem;
+    }
+    .hero .right p {
+        font-size: 0.6rem;
+    }
+    .hero .icons-container i {
+        font-size: 14px;
+    }
+    .footer .list {
+        flex-direction: column;
+        text-align: left;
+    }
+    .footer .div {
+        max-width: none;
+        margin: 5px 0;
+    }
+    .footer .div a {
+        margin-bottom: 3px;
+    }
+    .footer .logo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer .logo h1 {
+        font-size: 1.2rem;
+    }
+    .langu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .langu .buttonLanguage {
+        padding: 10px 20px;
+    }
+    .langu .language {
+        width: 100px;
+    }
+    .langu .language li {
+        padding: 5px;
+    }
+}
